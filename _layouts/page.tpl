@@ -18,7 +18,7 @@
 	{{ content }}
 
 	<footer>
-		<p>&copy; Since 2013 Jack Cao V1.0</p>
+		<p>&copy; Since <script type="text/javascript">new Date().getFullYear()</script> Plain V1.0</p>
 	</footer>
 	<!-- 网易云跟贴 -->
 
@@ -49,10 +49,12 @@ Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true)
 		</ul>
 	</nav>
 	
+	<!--
 	<form action="/search/" class="block block-search">
 		<h3>Search</h3>
 		<p><input type="search" name="q" placeholder="搜索一下下" /></p>
 	</form>
+	-->
 	
 	<div class="block block-about">
 		<h3>About</h3>
@@ -62,7 +64,7 @@ Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true)
 		</figure>
 		<p>厚积薄发</p>
         <p>心中的标准决定了可能达成的上限</p>
-	<p>Find me：cxlcym@gmail.com</p>
+	<p>Find me：mxh403@gmail.com</p>
 	</div>
 	
 	<div class="block block-license">
