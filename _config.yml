@@ -1,3 +1,4 @@
-theme: jekyll-theme-cayman
 name: 部落冲突知道
 description: 欢迎来到部落冲突知道
+baseurl: ''
+theme: jekyll-theme-cayman
