@@ -2,3 +2,36 @@ title: 部落冲突指导
 description: 欢迎来到部落冲突指导
 baseurl: ''
 theme: jekyll-theme-cayman
+markdown: kramdown
+pygments: true
+safe: false
+permalink: /posts/:title.html
+exclude:
+  - README.md
+
+name: Jack Cao
+host: cxlcym.github.com
+desc: 思考、成长与学习.
+
+custom:
+    category:
+        default: To Life
+        another: Another
+    categories:
+      - name:  default
+        title: To Life
+
+      - name:  another
+        title: Another
+meta:
+    author:
+        name: 迷失的海子
+        email: mxh403@gmail.com
+        disqus: 1757957                              # Disqus缩略标识
+        gcse: 008234092874476365914:ygzovwyok10     # Google自定义搜索标识ID
+        github: cxlcym                              # GitHub账号
+        gravatar: e1235ae56900647c5ec6b73c9a8d9e30  # Gravatar头像标识
+
+    disqus: http://v2.uyan.cc/code/uyan.js    # Disqus评论的JS地址
+    gapi: http://www.google.com/jsapi               # Google API地址
+    gravatar: http://en.gravatar.com/avatar/        # Gravatar头像服务器地址
