@@ -75,13 +75,13 @@ Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true)
 
 	
 	<div class="block block-thank">
-        <h3>Powered by <a href="http://cxlcym.github.io/" target="_blank">Jack Cao 4.5</a></h3>
+        <h3>Powered by <a href="https://sijiu.github.io/" target="_blank">Plain</a></h3>
         <h3>Based on <a href="https://github.com/mytharcher/SimpleGray" target="_blank">SimpleGray</a></h3> 
 	
 </aside>
 
-<script src="http://elfjs.googlecode.com/files/elf-0.4.1-min.js"></script> 
-<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+<script src="https://elfjs.googlecode.com/files/elf-0.4.1-min.js"></script>
+<script src="https://yandex.st/highlightjs/7.3/highlight.min.js"></script>
 
 <script src="/assets/js/site.js"></script>
 {% for script in page.scripts %}<script src="{{ script }}"></script>
@@ -105,7 +105,7 @@ site.TPL_SEARCH_TITLE = '#{0} / 搜索：#{1}';
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    document.getElementsById('year').innerHTML = new Date().getFullYear();
+    document.getElementById('year').innerHTML = new Date().getFullYear();
   })();
 
 </script>
