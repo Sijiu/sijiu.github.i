@@ -73,7 +73,7 @@
         </figure>
         <p>厚积薄发</p>
         <p>心中的标准决定了可能达成的上限</p>
-        <p>Find me：mxh403@gmail.com</p>
+        <p>Find me：mxh403@163.com</p>
     </div>
 
     <div class="block block-license">
