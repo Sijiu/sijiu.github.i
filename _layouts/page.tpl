@@ -90,6 +90,7 @@
         <h3>Powered by <a href="https://sijiu.github.io/" target="_blank">Plain</a></h3>
         <h3>Based on <a href="https://github.com/mytharcher/SimpleGray" target="_blank">SimpleGray</a></h3>
         <h3>Thank for <a href="http://cxlcym.github.io/" target="_blank">Cao xilong</a></h3>
+    </div>
 
 </aside>
 
