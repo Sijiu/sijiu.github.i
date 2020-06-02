@@ -1,5 +1,5 @@
-title: 部落冲突指导
-description: 欢迎来到部落冲突指导
+title: 半天的半天
+description: 欢迎来到半天的半天
 baseurl: ''
 theme: jekyll-theme-cayman
 markdown: kramdown
@@ -9,9 +9,9 @@ permalink: /posts/:title.html
 exclude:
   - README.md
 
-name: 部落冲突指导
+name: 半天的半天
 host: sijiu.github.io
-desc: 与部落冲突 思考、成长与学习.
+desc: 与半天的半天 思考、成长与学习.
 
 custom:
     category:
@@ -29,13 +29,13 @@ custom:
         title: 编程
 meta:
     author:
-        name: 部落冲突指导
-        email: mxh403@gmail.com
-        disqus: 1757957                              # Disqus缩略标识
-        gcse: 008234092874476365914:ygzovwyok10     # Google自定义搜索标识ID
+        name: 半天的半天
+        email: mxh403@163.com
+#        disqus: 1757957                              # Disqus缩略标识
+#        gcse: 008234092874476365914:ygzovwyok10     # Google自定义搜索标识ID
         github: sijiu                              # GitHub账号
 #        gravatar: e1235ae56900647c5ec6b73c9a8d9e30  # Gravatar头像标识
 
-    disqus: http://v2.uyan.cc/code/uyan.js    # Disqus评论的JS地址
-    gapi: http://www.google.com/jsapi               # Google API地址
+#    disqus: http://v2.uyan.cc/code/uyan.js    # Disqus评论的JS地址
+#    gapi: http://www.google.com/jsapi               # Google API地址
 #    gravatar: http://en.gravatar.com/avatar/        # Gravatar头像服务器地址

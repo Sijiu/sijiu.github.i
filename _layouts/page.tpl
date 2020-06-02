@@ -68,7 +68,7 @@
     <div class="block block-about">
         <h3>About</h3>
         <figure>
-            <img src="https://avatars0.githubusercontent.com/u/16146611?s=60"/>
+            <img src="/favicon.ico" style="width: 60px;"/>
             <p><strong>{{ site.meta.author.name }}</strong></p>
         </figure>
         <p>厚积薄发</p>
