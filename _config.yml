@@ -34,7 +34,7 @@ meta:
         disqus: 1757957                              # Disqus缩略标识
         gcse: 008234092874476365914:ygzovwyok10     # Google自定义搜索标识ID
         github: sijiu                              # GitHub账号
-        gravatar: https://avatars0.githubusercontent.com/u/16146611?s=60  # Gravatar头像标识
+#        gravatar: e1235ae56900647c5ec6b73c9a8d9e30  # Gravatar头像标识
 
     disqus: http://v2.uyan.cc/code/uyan.js    # Disqus评论的JS地址
     gapi: http://www.google.com/jsapi               # Google API地址
