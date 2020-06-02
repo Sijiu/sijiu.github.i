@@ -41,9 +41,14 @@
 
 <aside>
     <img align="middle" src="/image/lovelife.jpg" style="width: 300px; height: 170px;" alt="love life">
-    <H1 style="color:#c15a5b" ;font-size="200">Now or Never<a href="/feed.xml" class="feed-link" title="Subscribe"><img
-            src="/image/RSS.png" alt="RSS feed"/></a> <a href="https://github.com/{{ site.meta.author.github }}"><img
-            src="/image/github_72px.png" alt="Fork me on GitHub"></a></H1>
+    <H1 style="color:#ed9292; background-image: linear-gradient(to right, #2a333c, #83898e, #2a333c);
+    font-size: 200px;margin-top: 20px;">
+        Now or Never
+        <a href="/feed.xml" class="feed-link" title="Subscribe">
+        <img src="/image/RSS.png" alt="RSS feed"/></a>
+        <a href="https://github.com/{{ site.meta.author.github }}">
+        <img src="/image/github_72px.png" alt="Fork me on GitHub"></a>
+    </H1>
 
     <nav class="block">
         <ul>
@@ -63,8 +68,9 @@
     <div class="block block-about">
         <h3>About</h3>
         <figure>
-            {% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}?s=48"/>{%
-            endif %}
+<!--            {% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}?s=48"/>{%-->
+<!--            endif %}-->
+            <img src="https://avatars0.githubusercontent.com/u/16146611?s=60"/>
             <p><strong>{{ site.meta.author.name }}</strong></p>
         </figure>
         <p>厚积薄发</p>
