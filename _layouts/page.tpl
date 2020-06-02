@@ -42,7 +42,7 @@
 <aside>
     <img align="middle" src="/image/lovelife.jpg" style="width: 300px; height: 170px;" alt="love life">
     <H1 style="color:#ed9292; background-image: linear-gradient(to right, #2a333c, #83898e, #2a333c);
-    font-size: 200px;margin-top: 20px;">
+    font-size: 16px;margin-top: 20px;">
         Now or Never
         <a href="/feed.xml" class="feed-link" title="Subscribe">
         <img src="/image/RSS.png" alt="RSS feed"/></a>
