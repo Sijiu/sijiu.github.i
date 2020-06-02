@@ -78,10 +78,9 @@
 
     <div class="block block-license">
         <p style="display: inline-block;">
-            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" class="hide-target-icon"
-              title="Copyright declaration of site content">
-                <h3>Copyright</h3>
-                <img alt="知识共享许可协议" src="/image/by_nc88x31.png"/>
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"
+               class="hide-target-icon" title="Copyright declaration of site content">
+                <b>Copyright</b><img alt="知识共享许可协议" src="/image/by_nc88x31.png"/>
         </a></p>
     </div>
 
