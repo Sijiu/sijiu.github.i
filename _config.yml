@@ -17,12 +17,16 @@ custom:
     category:
         default: To Life
         another: Another
+        program: Program
     categories:
       - name:  default
         title: To Life
 
       - name:  another
         title: Another
+
+      - name:  program
+        title: Program
 meta:
     author:
         name: 部落冲突指导
