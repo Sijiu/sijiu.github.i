@@ -40,7 +40,7 @@
 </div>
 
 <aside>
-    <img align="middle" src="/image/lovelife.jpg" alt="love life">
+    <img align="middle" src="/image/lovelife.jpg" style="width: 300px; height: 170px;" alt="love life">
     <H1 style="color:#c15a5b" ;font-size="200">Now or Never<a href="/feed.xml" class="feed-link" title="Subscribe"><img
             src="/image/RSS.png" alt="RSS feed"/></a> <a href="https://github.com/{{ site.meta.author.github }}"><img
             src="/image/github_72px.png" alt="Fork me on GitHub"></a></H1>
