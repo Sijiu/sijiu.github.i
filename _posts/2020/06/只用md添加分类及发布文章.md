@@ -1,0 +1,44 @@
+---
+layout: post
+title: 只用md添加分类及发布文章
+category: program
+---
+
+
+## 创建分类
+- 在 _config.yml 文件的category 下添加   
+    `demo: 类别显示名`  
+    然后在 categories:下添加  
+    ```yaml
+       - name:  demo
+         title: 类别显示名 
+    ```  
+
+- 然后在category下创建文件夹 `demo`, `demo` 文件夹下创建文件 index.html:  
+  > 复制default文件夹下的 index.html 文件过来, 修改如下两项的值 
+  > `demo` 和 `类别显示名` 替换为新创建的名称  
+      
+  ```html  
+     title:  类别显示名 category
+        
+     assign list = site.categories.demo
+  ```   
+  
+## 发布文章
+- 在 _post 文件夹下创建要发布的文章文件, 文件名格式:   
+  `四位年份-两位月份-两位日期-文章标题.md`  
+  
+- 文章内容开头如下:  
+    ```markdown  
+    
+    ---
+    layout: post
+    title: 文章标题
+    category: demo
+    ---
+    
+    以下是文件正文, `注意`: demo 是该文章的分类, 见上一步创建分类中demo
+    ```
+
+
+
