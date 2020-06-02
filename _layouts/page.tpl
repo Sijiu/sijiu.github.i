@@ -68,8 +68,6 @@
     <div class="block block-about">
         <h3>About</h3>
         <figure>
-<!--            {% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}?s=48"/>{%-->
-<!--            endif %}-->
             <img src="https://avatars0.githubusercontent.com/u/16146611?s=60"/>
             <p><strong>{{ site.meta.author.name }}</strong></p>
         </figure>
