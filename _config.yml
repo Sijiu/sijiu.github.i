@@ -17,7 +17,7 @@ custom:
     category:
         default: To Life
         another: Another
-        program: Program
+        program: 编程
     categories:
       - name:  default
         title: To Life
@@ -26,7 +26,7 @@ custom:
         title: Another
 
       - name:  program
-        title: Program
+        title: 编程
 meta:
     author:
         name: 部落冲突指导
