@@ -32,8 +32,10 @@
     {{ content }}
 
     <footer>
-        <p>&copy; Since <span id="year"></span> Plain V1.0</p>
-        <span id="busuanzi_container_page_pv"> | 访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+        <p>&copy; Since <span id="year"></span> Plain V1.0
+            <span id="busuanzi_container_page_pv"> 访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+        </p>
+
     </footer>
 
 
@@ -93,7 +95,7 @@
         <h3>Based on <a href="https://github.com/mytharcher/SimpleGray" target="_blank">SimpleGray</a></h3>
         <h3>Thank for <a href="http://cxlcym.github.io/" target="_blank">Cao xilong</a></h3>
     </div>
-    <span id="busuanzi_container_site_pv">本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span>
+    <span id="busuanzi_container_site_pv" style="color: wheat">本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span>
 
 
 </aside>
