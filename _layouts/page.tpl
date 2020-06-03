@@ -41,7 +41,7 @@
         <ul>
             {% for category in site.custom.categories %}
                 {% if site.custom.hide contains category.name %}
-                {% elsif %}
+                {% else %}
                 <li class="{{ category.name }}"><a href="/category/{{ category.name }}/">{{ category.title }}</a></li>
                 {% endif %}
             {% endfor %}
