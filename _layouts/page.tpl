@@ -5,6 +5,7 @@
     <meta name="author" content="{{ site.meta.author.name }}"/>
     <meta name="keywords" content="{{ page.tags | join: ',' }}"/>
     <title>{{ site.name }}{% if page.title %} / {{ page.title }}{% endif %}</title>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=66563283" charset="UTF-8"></script>
     <link href="http://{{ site.host }}/feed.xml" rel="alternate" title="{{ site.name }}" type="application/atom+xml"/>
     <link rel="stylesheet" type="text/css" href="/assets/css/site.css"/>
     <link rel="stylesheet" type="text/css" href="/assets/css/code/github.css"/>
