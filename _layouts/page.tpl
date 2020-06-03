@@ -93,7 +93,7 @@
     </div>
 
 </aside>
-<script src="http://tajs.qq.com/stats?sId=66563283"></script>
+<script src="https://tajs.qq.com/stats?sId=66563283"></script>
 <script src="https://elfjs.googlecode.com/files/elf-0.4.1-min.js"></script>
 
 <script src="/assets/js/site.js"></script>
