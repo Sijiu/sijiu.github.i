@@ -74,10 +74,10 @@ article .gist td{font-size: 100%;}
 article .gist .line_numbers{font-size: 85%;}
 
 /* category */
-article .diary {color: #eaf2d3 !important; background: #eaf2d3;}
-article .program {color: #6495ed !important;}
-article .personal {color: #b0c4de !important;}
-article .another {color: #b0929f !important;}
+article a.diary, .diary a {color: #eaf2d3 !important; background: #eaf2d3;}
+article a.program, .program a {color: #6495ed !important;}
+article a.personal, .personal a {color: #b0c4de !important;}
+article a.another, .another a {color: #b0929f !important;}
 article .default {color: #d24d57 !important;}
 article .program1 {color: #9d2933 !important;}
 article .program1 {color: #2c3e50 !important;}
