@@ -18,6 +18,7 @@ custom:
         default: To Life
         another: Another
         program: 编程
+        personal: personal
     categories:
       - name:  default
         title: To Life
