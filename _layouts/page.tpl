@@ -5,7 +5,7 @@
     <meta name="author" content="{{ site.meta.author.name }}"/>
     <meta name="keywords" content="{{ page.tags | join: ',' }}"/>
     <title>{{ site.name }}{% if page.title %} / {{ page.title }}{% endif %}</title>
-    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=66563283" charset="UTF-8"></script>
+    <script src="https://tajs.qq.com/stats?sId=66563283"></script>
     <link href="http://{{ site.host }}/feed.xml" rel="alternate" title="{{ site.name }}" type="application/atom+xml"/>
     <link rel="stylesheet" type="text/css" href="/assets/css/site.css"/>
     <link rel="stylesheet" type="text/css" href="/assets/css/code/github.css"/>
@@ -22,21 +22,7 @@
     <footer>
         <p>&copy; Since <span id="year"></span> Plain V1.0</p>
     </footer>
-    <!-- 网易云跟贴 -->
 
-    <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-    <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-    <script>
-        var cloudTieConfig = {
-            url: document.location.href,
-            sourceId: "",
-            productKey: "425ddc3506af4a3bad2b976ab4d1b339",
-            target: "cloud-tie-wrapper"
-        };
-        var yunManualLoad = true;
-        Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
-    </script>
-    <!-- 网易云跟贴 -->
 
 </div>
 
