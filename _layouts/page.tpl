@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="author" content="{{ site.meta.author.name }}"/>
     <meta name="keywords" content="{{ page.tags | join: ',' }}"/>
+    <meta name="baidu-site-verification" content="plbmWis5PB" />
     <title>{{ site.name }}{% if page.title %} / {{ page.title }}{% endif %}</title>
     <link href="http://{{ site.host }}/feed.xml" rel="alternate" title="{{ site.name }}" type="application/atom+xml"/>
     <link rel="stylesheet" type="text/css" href="/assets/css/site.css"/>
