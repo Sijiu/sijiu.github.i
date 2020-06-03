@@ -7,5 +7,6 @@
 	{% assign zh = content | strip_html | strip_newlines | split: "" | size %}
 	{% assign ch =  en | plus: zh %}
 	{% assign read = ch | divided_by: 400 %}
-    <span style="margin-left: 20px; ">约 {{ ch }} 字  阅读需 {{ read }} 分钟  {{ en }},  {{ zh }}, {{ ch }}</span>
+	<span style="margin-left: 20px; ">约 {{ ch }} 字<p style="color: red">💞</p>阅读需 {{ read }} 分钟
+}}</span>
 </p>
