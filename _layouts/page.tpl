@@ -96,6 +96,7 @@
         <h3>Thank for <a href="http://cxlcym.github.io/" target="_blank">Cao xilong</a></h3>
     </div>
     <span id="busuanzi_container_site_pv" style="color: #999">本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span>
+    <span id="busuanzi_container_site_uv" style="color: #999">本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
 
 
 </aside>
