@@ -21,7 +21,9 @@ custom:
         personal: personal
         diary: diary
 
-    hide: [personal, diary]
+    hide:
+      - personal
+      - diary
 
     categories:
       - name:  personal
