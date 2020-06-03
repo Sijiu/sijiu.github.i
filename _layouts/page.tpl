@@ -13,6 +13,17 @@
     <link rel="stylesheet" type="text/css" href="{{ style }}"/>
     {% endfor %}
     <script src="https://tajs.qq.com/stats?sId=66563283"></script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?af402803ce98fb2abc371053df40514d";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
 </head>
 
 <body class="{{ page.pageClass }}">
@@ -22,6 +33,7 @@
 
     <footer>
         <p>&copy; Since <span id="year"></span> Plain V1.0</p>
+        <span id="busuanzi_container_page_pv"> | 访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
     </footer>
 
 
@@ -81,6 +93,8 @@
         <h3>Based on <a href="https://github.com/mytharcher/SimpleGray" target="_blank">SimpleGray</a></h3>
         <h3>Thank for <a href="http://cxlcym.github.io/" target="_blank">Cao xilong</a></h3>
     </div>
+    <span id="busuanzi_container_site_pv">本站总访问量：<span id="busuanzi_value_site_pv"></span>次</span>
+
 
 </aside>
 <!--<script src="https://tajs.qq.com/stats?sId=66563283"></script>-->
