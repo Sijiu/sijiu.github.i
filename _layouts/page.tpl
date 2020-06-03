@@ -40,7 +40,8 @@
     <nav class="block">
         <ul>
             {% for category in site.custom.categories %}
-                {% if category.name not in site.custom.hide %}
+                {% if site.custom.hide contains category.name %}
+                {% elsif %}
                 <li class="{{ category.name }}"><a href="/category/{{ category.name }}/">{{ category.title }}</a></li>
                 {% endif %}
             {% endfor %}
