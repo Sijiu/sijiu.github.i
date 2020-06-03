@@ -19,7 +19,17 @@ custom:
         another: Another
         program: 编程
         personal: personal
+        diary: diary
+
+    hide: [personal, diary]
+
     categories:
+      - name:  personal
+        title: personal
+
+      - name:  diary
+        title: 日记
+
       - name:  default
         title: To Life
 
@@ -28,6 +38,7 @@ custom:
 
       - name:  program
         title: 编程
+
 meta:
     author:
         name: 半天的半天
