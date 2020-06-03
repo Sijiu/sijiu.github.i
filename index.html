@@ -9,7 +9,6 @@ layout: list
 {% include header.tpl %}
 
 {% for post in list %}
-<p>{{ post.category }}</p>
 {% if site.custom.hide contains post.category %}
 {% else %}
 <article {% if forloop.index == 1 and preview %} content-loaded="1"{% endif %}>
