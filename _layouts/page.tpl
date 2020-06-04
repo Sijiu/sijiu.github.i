@@ -35,7 +35,7 @@
     {{ content }}
 
     <footer>
-        <div id="gitalk-container"></div>
+        {% include gitalk.tpl %}
         <p>&copy; Since <span id="year"></span> Plain V1.0
             <span id="busuanzi_container_page_pv" title="浏览量">  👀 <span id="busuanzi_value_page_pv"></span></span>
         </p>
@@ -111,18 +111,7 @@
 {% for script in page.scripts %}
 <script src="{{ script }}"></script>
 {% endfor %}
-<script>
-    var gitalk = new Gitalk({
-      clientID: '{{ site.gitalk.clientID }}',
-      clientSecret: '{{ site.gitalk.clientSecret }}',
-      repo: '{{ site.repo.clientSecret }}',
-      owner: '{{ site.owner.clientSecret }}',
-      admin: ['{{ site.admin.clientSecret }}'],
-      id: '{{ page.url }}',
-      distractionFreeMode: false
-    })
-    gitalk.render('gitalk-container')
-</script>
+
 <script type="text/javascript">
 
     var _gaq = _gaq || [];
