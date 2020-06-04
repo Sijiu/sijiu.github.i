@@ -5,9 +5,9 @@
     var gitalk = new Gitalk({
       clientID: '{{ site.gitalk.clientID }}',
       clientSecret: '{{ site.gitalk.clientSecret }}',
-      repo: '{{ site.repo.btalk }}',
-      owner: '{{ site.owner.owner }}',
-      admin: ['{{ site.admin.admin }}'],
+      repo: '{{ site.gitalk.repo }}',
+      owner: '{{ site.gitalk.owner }}',
+      admin: ['{{ site.gitalk.admin }}'],
       id: '{{ page.url }}',
       distractionFreeMode: false
     })
