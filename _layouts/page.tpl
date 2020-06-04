@@ -33,7 +33,7 @@
 
     <footer>
         <p>&copy; Since <span id="year"></span> Plain V1.0
-            <span id="busuanzi_container_page_pv"> | 本页访问量：<span id="busuanzi_value_page_pv"></span> 次</span>
+            <span id="busuanzi_container_page_pv" title="浏览量">  👀 <span id="busuanzi_value_page_pv"></span></span>
         </p>
 
     </footer>
