@@ -51,3 +51,11 @@ meta:
 #    disqus: http://v2.uyan.cc/code/uyan.js    # Disqus评论的JS地址
 #    gapi: http://www.google.com/jsapi               # Google API地址
 #    gravatar: http://en.gravatar.com/avatar/        # Gravatar头像服务器地址
+gitalk:
+  enable: false
+  clientID: b32d57ea8d3f2aea8e88
+  clientSecret: 878ead811ae1150a50e9a15950626298ab79362a
+  repo: btalk
+  owner: Sijiu
+  admin: Sijiu
+

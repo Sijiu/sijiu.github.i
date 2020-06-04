@@ -12,6 +12,9 @@
     {% for style in page.styles %}
     <link rel="stylesheet" type="text/css" href="{{ style }}"/>
     {% endfor %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
     <script src="https://tajs.qq.com/stats?sId=66563283"></script>
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <script>
@@ -32,6 +35,7 @@
     {{ content }}
 
     <footer>
+        <div id="gitalk-container"></div>
         <p>&copy; Since <span id="year"></span> Plain V1.0
             <span id="busuanzi_container_page_pv" title="浏览量">  👀 <span id="busuanzi_value_page_pv"></span></span>
         </p>
@@ -108,13 +112,16 @@
 <script src="{{ script }}"></script>
 {% endfor %}
 <script>
-    site.URL_GOOGLE_API = '{{site.meta.gapi}}';
-    <!--discus评论闲置-->
-    site.URL_DISCUS_COMMENT = '{{ site.meta.author.disqus }}' ? 'http://{{ site.meta.author.disqus }}.{{ site.meta.disqus }}' : '';
-
-    site.VAR_SITE_NAME = '{{ site.name }}';
-    site.VAR_GOOGLE_CUSTOM_SEARCH_ID = '{{ site.meta.author.gcse }}';
-    site.TPL_SEARCH_TITLE = '#{0} / 搜索：#{1}';
+    var gitalk = new Gitalk({
+      clientID: '{{ site.gitalk.clientID }}',
+      clientSecret: '{{ site.gitalk.clientSecret }}',
+      repo: '{{ site.repo.clientSecret }}',
+      owner: '{{ site.owner.clientSecret }}',
+      admin: ['{{ site.admin.clientSecret }}'],
+      id: '{{ page.url }}',
+      distractionFreeMode: false
+    })
+    gitalk.render('gitalk-container')
 </script>
 <script type="text/javascript">
 
