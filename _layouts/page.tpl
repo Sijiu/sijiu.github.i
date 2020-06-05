@@ -117,7 +117,8 @@
     let arr =document.getElementsByTagName("a");
         arr = [].slice.call(arr);
         arr.forEach(el => {
-            if(el.getAttribute("href").startsWith("http")){
+            if(el.getAttribute("href") && el.getAttribute("href").startsWith("http")
+                && (!el.getAttribute("href").startsWith("https://sijiu.github.io"))){
                 el.setAttribute("target", "_blank")
             }
         })
