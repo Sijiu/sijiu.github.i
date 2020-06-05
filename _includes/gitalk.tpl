@@ -8,7 +8,7 @@
       repo: '{{ site.gitalk.repo }}',
       owner: '{{ site.gitalk.owner }}',
       admin: ['{{ site.gitalk.admin }}'],
-      id: '{{ page.url }}',
+      id: decodeURI('{{ page.url }}'),
       distractionFreeMode: false
     })
     gitalk.render('gitalk-container')
