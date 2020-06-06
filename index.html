@@ -3,8 +3,9 @@ layout: list
 ---
 
 <!-- 首页即博客列表 -->
-{% assign list = site.posts %}
+{% assign list = site.categories.custom %}
 {% assign preview = false %}
+{% assign limitation = 10 %}
 <!--{  % include list.tpl %  }-->
 {% include header.tpl %}
 
@@ -26,5 +27,9 @@ layout: list
 {% if list == null %}
 <article class="empty">
 	<p>该分类下还没有文章</p>
+</article>
+{% elsif list.size > limitation %}
+<article>
+	<p><a href="archive">全部文章</a></p>
 </article>
 {% endif %}
