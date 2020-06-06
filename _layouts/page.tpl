@@ -63,8 +63,8 @@
                 {% else %}
                 <li class="{{ category.name }}"><a href="/category/{{ category.name }}/">{{ category.title }}</a></li>
                 {% endif %}
-                <li class="world"><a href="/world/">真彩世界</a></li>
             {% endfor %}
+            <li class="world"><a href="/world/">真彩世界</a></li>
         </ul>
     </nav>
 
