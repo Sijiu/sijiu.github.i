@@ -13,6 +13,18 @@ name: 半天的半天
 host: sijiu.github.io
 desc: 与半天的半天 思考, 记录, 观察, 探索
 
+defaults:
+  - scope:
+        path: custom/_posts
+        type: posts
+    values:
+        permalink: custom/posts/:title
+        layout: post
+  - scope:
+        path: world/_posts
+    values:
+        layout: post
+
 custom:
     category:
         default: To Life

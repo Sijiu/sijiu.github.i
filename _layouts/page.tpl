@@ -63,6 +63,7 @@
                 {% else %}
                 <li class="{{ category.name }}"><a href="/category/{{ category.name }}/">{{ category.title }}</a></li>
                 {% endif %}
+                <li class="world"><a href="/world/">真彩世界</a></li>
             {% endfor %}
         </ul>
     </nav>
@@ -81,7 +82,7 @@
             <p><strong>{{ site.meta.author.name }}</strong></p>
         </figure>
         <p>厚积薄发</p>
-        <p>心中的标准决定了可能达成的上限</p>
+        <p>值得一做的事, 都值得做好!</p>
         <p>Find me：mxh403@163.com</p>
     </div>
 
@@ -98,6 +99,7 @@
         <h3>Powered by <a href="https://sijiu.github.io/" target="_blank">Plain</a></h3>
         <h3>Based on <a href="https://github.com/mytharcher/SimpleGray" target="_blank">SimpleGray</a></h3>
         <h3>Thank for <a href="http://cxlcym.github.io/" target="_blank">Cao xilong</a></h3>
+        <h3>Thank for <a href="http://yanjunyi.com/discovery/" target="_blank">严俊羿</a></h3>
     </div>
     <span id="busuanzi_container_site_pv" style="color: #999">本站总访问量：<span id="busuanzi_value_site_pv"></span> 次</span>
     <span id="busuanzi_container_site_uv" style="color: #999"> ✍ 访客数：<span id="busuanzi_value_site_uv"></span> 人次</span>
