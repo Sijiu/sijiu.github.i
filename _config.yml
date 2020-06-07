@@ -23,6 +23,7 @@ defaults:
   - scope:
         path: world/_posts
     values:
+        permalink: world/posts/:title
         layout: post
 
 custom:
