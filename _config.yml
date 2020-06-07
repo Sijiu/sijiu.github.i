@@ -52,6 +52,8 @@ custom:
       - name:  program
         title: 编程
 
+tags_path : /tags.html
+
 meta:
     author:
         name: 半天的半天

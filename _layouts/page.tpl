@@ -76,14 +76,24 @@
     -->
 
     <div class="block block-about">
-        <h3>About</h3>
+        <h3>关于</h3>
         <figure>
             <img src="/favicon.ico" style="width: 60px;"/>
             <p><strong>{{ site.meta.author.name }}</strong></p>
         </figure>
-        <p>厚积薄发</p>
         <p>值得一做的事, 都值得做好!</p>
-        <p>Find me：mxh403@163.com</p>
+        <!--<p>Find me：mxh403@163.com</p>-->
+    </div>
+
+    <div class="block block-tags">
+        <h3>Tags</h3>
+        {% unless site.tags == empty %}
+        <ul class="tags_list">
+            <li><i class="icon-tags"></i></li>
+            {% assign tags_list = site.tags %}
+            {% include JB/tags_list %}
+        </ul>
+        {% endunless %}
     </div>
 
     <div class="block block-license">
