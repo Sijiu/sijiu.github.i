@@ -6,7 +6,7 @@ Usage:
   example:
     <ul>
   	  {% assign tags_list = site.tags %}
-  	  {% include JB/tags_list %}
+  	  {% include tags_list %}
   	</ul>
 
   Notes:
@@ -44,7 +44,7 @@ Usage:
 	{% assign font_size = tag[1].size | times: RANGE | divided_by: MAX_CNT | plus: BASE_FONT %}
 	{% endif %}
 	<!--<a href="{ { BASE_PATH } }{{ site.JB.tags_path }}#{{ tag[0] }}-ref" style="font-size:{{font_size}}pt;" title="{{ tag[1].size }} posts">{{ tag[0] }}<span></span></a>-->
-	<a href="{{ site.JB.tags_path }}#{{ tag[0] }}-ref" style="font-size:{{font_size}}pt;" title="{{ tag[1].size }} posts">{{ tag[0] }}<span></span></a>
+	<a href="{{ site.tags_path }}#{{ tag[0] }}-ref" style="font-size:{{font_size}}pt;" title="{{ tag[1].size }} posts">{{ tag[0] }}<span></span></a>
     {% endfor %}
   {% endif %}
 <!--{ % endif % }-->
