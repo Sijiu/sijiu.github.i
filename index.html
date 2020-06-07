@@ -10,7 +10,6 @@ layout: list
 {% include header.tpl %}
 
 {% for post in list %}
-{{ post.category }}
 {% if site.custom.hide contains post.category or post.url contains "/world/" %}
 {% else %}
 <article {% if forloop.index == 1 and preview %} content-loaded="1"{% endif %}>
