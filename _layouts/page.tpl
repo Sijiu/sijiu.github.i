@@ -91,7 +91,7 @@
         <ul class="tags_list">
             <li><i class="icon-tags"></i></li>
             {% assign tags_list = site.tags %}
-            {% include JB/tags_list %}
+            {% include tags_list %}
         </ul>
         {% endunless %}
     </div>
