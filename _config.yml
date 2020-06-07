@@ -34,7 +34,7 @@ custom:
         personal: personal
         diary: diary
 
-    hide: personal_diary_world
+    hide: personal_diary_world/
 
     categories:
       - name:  personal
