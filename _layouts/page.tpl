@@ -53,9 +53,9 @@
         <a href="/feed.xml" class="feed-link" title="Subscribe">
         <img src="/image/RSS.png" alt="RSS feed"/></a>
         <a href="https://github.com/{{ site.meta.author.github }}">
-        <img src="/image/github_72px.png" alt="Fork me on GitHub"></a>
-        <a href='https://gitee.com/mplain/mplain/stargazers'>
-            <img src='https://gitee.com/mplain/mplain/badge/star.svg?theme=white' alt='star'></img>
+        <img src="/image/github_72px.png" alt="Look me on GitHub"></a>
+        <a href="https://gitee.com/mplain/mplain/pages">
+            <img src="/image/gitee.ico" alt="Gitee pages"></a>
         </a>
     </H1>
 
