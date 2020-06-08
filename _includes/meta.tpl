@@ -2,10 +2,13 @@
     <span class="datetime">{{ post.date | date: "%Y-%m-%d" }}</span>
 	 Cat:[<a href="/category/{{ post.category }}"
 				  class="{{ post.category }}">{{ site.custom.category[post.category] }}</a>]
-    &nbsp;&nbsp;Tag:
-    {% for tag in post.tags %}
-    <a href="/tags/{{ tag }}" class="tag"> {{ tag }} </a>
-    {% endfor %}
+    -- {{ post.tags }}
+    {% if post.tags %}
+        &nbsp;&nbsp;Tag:
+        {% for tag in post.tags %}
+        <a href="/tags/{{ tag }}" class="tag"> {{ tag }} </a>
+        {% endfor %}
+    {% endif %}
     {% if page.url contains "posts" %}
         {% assign en = page.content | number_of_words %}
         {% assign zh = content | strip_html | strip_newlines | split: "" | size %}
