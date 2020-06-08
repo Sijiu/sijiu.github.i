@@ -1,7 +1,11 @@
 ---
 layout: post
 title: git pages 在 github 和 gitee 同时发布
-category: personal
+category: program
+tags:
+- pages
+- github
+- gitee
 ---
 * 目录
 {:toc}
