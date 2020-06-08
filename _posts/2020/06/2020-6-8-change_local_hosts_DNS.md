@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 修改本地 HOSTS 文件解决 DNS 污染
-category: personal
+category: program
 tags:
 - HOSTS
 - DNS
