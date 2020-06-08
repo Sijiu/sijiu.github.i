@@ -55,7 +55,7 @@
         <a href="https://github.com/{{ site.meta.author.github }}">
         <img src="/image/github_72px.png" alt="Look me on GitHub"></a>
         <a href="https://gitee.com/mplain/mplain/pages">
-            <img src="/image/gitee.ico" alt="Gitee pages"></a>
+            <img src="/image/gitee.ico" alt="Gitee pages" style="height: 15px;"></a>
         </a>
     </H1>
 
