@@ -2,7 +2,7 @@
     <span class="datetime">{{ post.date | date: "%Y-%m-%d" }}</span>
 	 Cat:[<a href="/category/{{ post.category }}"
 				  class="{{ post.category }}">{{ site.custom.category[post.category] }}</a>]
-    {% if post.tags..size > 0 %}
+    {% if post.tags.size > 0 %}
         &nbsp;&nbsp;Tag:
         {% for tag in post.tags %}
         <a href="/tags.html/{{ tag }}-ref" class="tag"> {{ tag }} </a>
