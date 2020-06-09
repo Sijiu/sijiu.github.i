@@ -10,9 +10,10 @@ title: Tags
 </ul>
 <p style="margin-bottom: 10px;">&nbsp;</p>
 
-{% for tag in site.tags %} 
-  <h2 id="{{ tag[0] }}-ref" class="hide_tag">{{ tag[0] }}</h2>
-  <ul class="hide_tag">
+{% for tag in site.tags %}
+<div name="tags_div" id="{{ tag[0] }}_div" class="tag_hide">
+  <h2 id="{{ tag[0] }}-ref" >{{ tag[0] }}</h2>
+  <ul>
     {% assign list = tag[1] %}
     {% for post in list %}
       <article {% if forloop.index== 1 and preview %} content-loaded="1" {% endif %}>
@@ -32,16 +33,16 @@ title: Tags
     </article>
     {% endif %}
   </ul>
+</div>
 {% endfor %}
 
 <script type="text/javascript">
-
-    let h2arr =document.getElementsByTagName("h2");
+    let aim_tag = location.hash.replace(/#|-ref/g, "")
+    let h2arr =document.getElementsByName("tags_div");
         h2arr = [].slice.call(h2arr);
-    let aim_tag = location.hash.replace("#", "")
         h2arr.forEach(el => {
-          let tag = el.getAttribute("id")
-            if(tag && tag === aim_tag){
+            let tag = el.getAttribute("id")
+            if(tag && tag.replace("_div", "") === aim_tag){
                 el.setAttribute("class", "tag_show")
             }
         })
