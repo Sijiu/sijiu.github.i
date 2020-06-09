@@ -72,14 +72,8 @@
         </ul>
     </nav>
 
-    <!--
-    <form action="/search/" class="block block-search">
-        <h3>Search</h3>
-        <p><input type="search" name="q" placeholder="搜索一下下" /></p>
-    </form>
-    -->
     <div id="search-container">
-        <input type="text" id="search-input" placeholder="search...">
+        <input type="text" id="search-input" placeholder="搜索一下下">
         <ul id="results-container"></ul>
     </div>
 
