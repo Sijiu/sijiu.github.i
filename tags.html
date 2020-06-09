@@ -45,6 +45,8 @@ title: Tags
       let tag = el.getAttribute("id")
       if (tag && tag.replace("_div", "") === aim_tag) {
         el.setAttribute("class", "tag_show")
+      }else{
+         el.setAttribute("class", "tag_hide")
       }
     })
   }
@@ -53,7 +55,6 @@ title: Tags
   t_arr = [].slice.call(t_arr);
   t_arr.forEach(el => {
     el.onclick = changeTag;
-    location.reload()
   })
 
   changeTag();

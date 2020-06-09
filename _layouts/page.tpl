@@ -64,7 +64,7 @@
             {% for category in site.custom.categories %}
                 {% if site.custom.hide contains category.name %}
                 {% else %}
-                <li class="{{ category.name }}"><a href="/category/{{ category.name }}/">{{ category.title }}</a></li>
+                <li class="{{ category.name }}"><a href="/category/{{ category.name }}/">{{ category.title }}(site.categories[category].size)</a></li>
                 {% endif %}
             {% endfor %}
             <li class="world"><a href="/world/">真彩世界</a></li>
