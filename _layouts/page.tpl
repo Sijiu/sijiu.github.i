@@ -65,7 +65,7 @@
                 {% if site.custom.hide contains category.name %}
                 {% else %}
                 <li class="{{ category.name }}"><a href="/category/{{ category.name }}/">{{ category.title
-                    }}({{site.categories[category].size}})</a></li>
+                    }}({{ site.categories[category].size }})</a></li>
                 {% endif %}
             {% endfor %}
             <li class="world"><a href="/world/">真彩世界</a></li>
@@ -90,7 +90,7 @@
     </div>
 
     <div class="block block-tags">
-        <h3>Tags</h3>
+        <h3><a href="/tags.html">Tags </a></h3>
         {% unless site.tags == empty %}
         <ul class="tags_list">
             <li><i class="icon-tags"></i></li>
@@ -138,6 +138,32 @@
                 el.setAttribute("target", "_blank")
             }
         })
+
+      let changeTag = function () {
+    let aim_tag = decodeURI(location.hash.replace(/#|-ref/g, ""))
+    let h2arr = document.getElementsByName("tags_div");
+    h2arr = [].slice.call(h2arr);
+    h2arr.forEach(el => {
+      let tag = el.getAttribute("id")
+      if (tag && tag.replace("_div", "") === aim_tag) {
+        el.setAttribute("class", "tag_show")
+      }else{
+        if(aim_tag){
+          el.setAttribute("class", "tag_hide")
+        }else{
+          el.setAttribute("class", "tag_show")
+        }
+      }
+    })
+  }
+
+      let t_arr = document.getElementsByName("tag_a");
+      t_arr = [].slice.call(t_arr);
+      t_arr.forEach(el => {
+        el.onclick = changeTag;
+      })
+
+      changeTag();
 
 </script>
 

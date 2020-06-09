@@ -86,7 +86,7 @@ article .program1 {color: #2c3e50 !important;}
 .tag_hide {display: none}
 .tag_show {display: block}
 
-.tag-box a span {
+.tag_box a span {
     vertical-align: super;
     font-size: .8em;
 }
