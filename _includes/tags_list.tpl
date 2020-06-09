@@ -33,7 +33,8 @@ Usage:
 	{% else %}
 	{% assign font_size = site.tags[tag].size | times: RANGE | divided_by: MAX_CNT | plus: BASE_FONT %}
 	{% endif %}
-    	<a href="{{ site.tags_path }}#{{ tag }}-ref" style="font-size:{{font_size}}pt;">{{ tag }} <span>{{ site.tags[tag].size }}</span></a>
+    	<a name="tag_a" href="{{ site.tags_path }}#{{ tag }}-ref" style="font-size:{{font_size}}pt;">{{ tag }} <span>{{
+			site.tags[tag].size }}</span></a>
     {% endfor %}
   {% else %}
     {% for tag in tags_list %}
@@ -42,7 +43,8 @@ Usage:
 	{% else %}
 	{% assign font_size = tag[1].size | times: RANGE | divided_by: MAX_CNT | plus: BASE_FONT %}
 	{% endif %}
-	<a href="{{ site.tags_path }}#{{ tag[0] }}-ref" style="font-size:{{font_size}}pt;" title="{{ tag[1].size }} posts">{{ tag[0] }}<span></span></a>
+	<a name="tag_a" href="{{ site.tags_path }}#{{ tag[0] }}-ref" style="font-size:{{font_size}}pt;"
+	   title="{{ tag[1].size }} posts">{{ tag[0] }}<span>{{ site.tags[tag].size }}</span></a>
     {% endfor %}
   {% endif %}
 <!--{ % endif % }-->
