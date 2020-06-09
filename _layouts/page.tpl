@@ -65,7 +65,7 @@
                 {% if site.custom.hide contains category.name %}
                 {% else %}
                 <li class="{{ category.name }}"><a href="/category/{{ category.name }}/">{{ category.title
-                    }} {{ site.custom.categories[category].size }}</a></li>
+                    }} <span>{{ category | last | size }}</span></a></li>
                 {% endif %}
             {% endfor %}
             <li class="world"><a href="/world/">真彩世界</a></li>
@@ -78,6 +78,10 @@
         <p><input type="search" name="q" placeholder="搜索一下下" /></p>
     </form>
     -->
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="search...">
+        <ul id="results-container"></ul>
+    </div>
 
     <div class="block block-about">
         <h3>关于</h3>
@@ -124,11 +128,22 @@
 <!--<script src="https://elfjs.googlecode.com/files/elf-0.4.1-min.js"></script>-->
 
 <script src="/assets/js/site.js"></script>
+<script src="/assets/js/simple-jekyll-search.min.js"></script>
 {% for script in page.scripts %}
 <script src="{{ script }}"></script>
 {% endfor %}
 
 <script type="text/javascript">
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json',
+        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>', // 文章列表模板
+        noResultsText: '没有搜索到文章', // 无搜索数据提示语
+        limit: 20, // 返回最大文章数
+        fuzzy: false // 是否模糊匹配
+    })
+
 
     let arr =document.getElementsByTagName("a");
         arr = [].slice.call(arr);
