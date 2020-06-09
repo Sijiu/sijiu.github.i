@@ -53,6 +53,7 @@ title: Tags
   t_arr = [].slice.call(t_arr);
   t_arr.forEach(el => {
     el.onclick = changeTag;
+    location.reload()
   })
 
   changeTag();
