@@ -5,7 +5,7 @@
     {% if post.tags.size > 0 %}
         &nbsp;&nbsp;Tag:
         {% for tag in post.tags %}
-        <a href="/tags.html/{{ tag }}-ref" class="tag"> {{ tag }} </a>
+        <a href="/tags_{{ tag }}-ref" class="tag"> {{ tag }} </a>
         {% endfor %}
     {% endif %}
     {% if page.url contains "posts" %}
