@@ -82,6 +82,10 @@ article .default {color: #d24d57 !important;}
 article .program1 {color: #9d2933 !important;}
 article .program1 {color: #2c3e50 !important;}
 
+/* tags */
+.tag_hide {display: none}
+.tag_show {display: block}
+
 
 
 
