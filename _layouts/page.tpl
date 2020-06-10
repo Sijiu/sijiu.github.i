@@ -37,7 +37,7 @@
 
     <footer>
         {% include gitalk.tpl %}
-        <p>&copy; Since <span id="year"></span> Plain V1.0
+        <p>&copy; Since <span id="year"></span> Plain V2.0
             <span id="busuanzi_container_page_pv" title="浏览量">  👀 <span id="busuanzi_value_page_pv"></span></span>
         </p>
 
@@ -47,7 +47,7 @@
 </div>
 
 <aside>
-    <img align="middle" src="/image/lovelife.jpg" style="width: 300px; height: 170px;" alt="love life">
+<!--    <img align="middle" src="/image/lovelife.jpg" style="width: 300px; height: 170px;" alt="love life">-->
     <H1 style="color:#ed9292; background-image: linear-gradient(to right, #2a333c, #83898e, #2a333c);
     font-size: 16px;margin-top: 20px;">
         Now or Never
@@ -62,13 +62,20 @@
 
     <nav class="block">
         <p style="display: none">{{ site.categories }}</p>
-        <p style="display: none">{{ site.custom.categories }}</p>
+        {% for category in site.custom.categories %}
+                {% if site.custom.hide contains category.name %}
+                {% else %}
+                <p style="display: none">{{ site.categories[category.name] }},  {{ site.categories[category.name] |
+                    size }}</p>
+                {% endif %}
+        {% endfor %}
         <ul>
             {% for category in site.categories %}
                 {% assign name = category | first %}
                 {% if site.custom.hide contains name %}
                 {% else %}
                 <li class="{{ name }}" ><a href="/category/{{ name }}/">
+                    <p style="display: none">{{ site.custom.categories[name] }}</p>
                     {{ site.custom.categories[name] }} <span>{{ category | last | size }}</span></a></li>
                 {% endif %}
             {% endfor %}
