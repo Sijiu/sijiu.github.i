@@ -65,11 +65,11 @@
             {% for category in site.categories %}
                 {% if site.custom.hide contains category.name %}
                 {% else %}
-                <li class="{{ category.name }}"><a href="/category/{{ category.name }}/">{{ category.title
-                    }} <span>{{ category | last | size }}</span></a></li>
+                <li class="{{ category.name }}"><a href="/category/{{ category.name }}/">
+                    {{ {{ category | first }} <span>{{ category | last | size }}</span></a></li>
                 {% endif %}
             {% endfor %}
-            <li class="world"><a href="/world/">真彩世界</a></li>
+            <li class="world"><a href="/world/">真彩世界<span>{{ site.world.posts | size }}</span></a></li>
         </ul>
     </nav>
 
@@ -79,7 +79,7 @@
     </div>
 
     <div class="block block-about">
-        <h3>关于</h3>
+        <h3>关于</h3> {{ site.posts| size }}
         <figure>
             <img src="/favicon.ico" style="width: 60px;"/>
             <p><strong>{{ site.meta.author.name }}</strong></p>
