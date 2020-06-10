@@ -2,6 +2,7 @@
 layout: post
 title: 重置 Winsock 解决能 ping 通却没有网络的问题
 category: program
+paginate: true
 tags: ping Winsock DNS 网络
 ---
 * 目录

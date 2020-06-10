@@ -2,6 +2,7 @@
 layout: post
 title: So_What_think_for_HDL
 category: personal
+paginate: true
 ---
 * 目录
 {:toc}

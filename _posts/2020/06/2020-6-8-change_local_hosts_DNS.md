@@ -2,6 +2,7 @@
 layout: post
 title: 修改本地 HOSTS 文件解决 DNS 污染
 category: program
+paginate: true
 tags:
 - HOSTS
 - DNS

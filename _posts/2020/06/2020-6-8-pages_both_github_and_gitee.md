@@ -2,6 +2,7 @@
 layout: post
 title: git pages 在 github 和 gitee 同时发布
 category: program
+paginate: true
 tags:
 - pages
 - github
