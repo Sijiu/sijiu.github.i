@@ -6,8 +6,7 @@ markdown: kramdown
 rouge: true
 safe: false
 permalink: /posts/:title.html
-paginate: 9
-paginate_path: /page:num/
+
 exclude:
   - README.md
 
@@ -75,4 +74,8 @@ gitalk:
   repo: btalk
   owner: Sijiu
   admin: Sijiu
+
+gems: [jekyll-paginate,jekyll-sitemap]
+paginate: 9
+paginate_path: /page:num/
 
