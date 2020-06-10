@@ -60,13 +60,16 @@
         </a>
     </H1>
 
-    <nav class="block {{ site.categories }}">
+    <nav class="block">
+        <p style="display: none">{{ site.categories }}</p>
+        <p style="display: none">{{ site.custom.categories }}</p>
         <ul>
             {% for category in site.categories %}
-                {% if site.custom.hide contains category.name %}
+                {{ assign name = category | first }}
+                {% if site.custom.hide contains name %}
                 {% else %}
-                <li class=" {{ category | first }}" ><a href="/category/ {{ category | first }}/">
-                    {{ category | first }} <span>{{ category | last | size }}</span></a></li>
+                <li class="{{ name }}" ><a href="/category/{{ name }}/">
+                    {{ site.custom.categories[name] }} <span>{{ category | last | size }}</span></a></li>
                 {% endif %}
             {% endfor %}
             <li class="world"><a href="/world/" >真彩世界<span>{{ site.posts| size }}</span></a></li>
