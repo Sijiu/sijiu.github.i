@@ -65,7 +65,7 @@
         <p style="display: none">{{ site.custom.categories }}</p>
         <ul>
             {% for category in site.categories %}
-                {{ assign name = category | first }}
+                {% assign name = category | first %}
                 {% if site.custom.hide contains name %}
                 {% else %}
                 <li class="{{ name }}" ><a href="/category/{{ name }}/">
