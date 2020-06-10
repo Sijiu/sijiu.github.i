@@ -79,7 +79,7 @@
     </div>
 
     <div class="block block-about">
-        <h3>关于</h3> {{ site.posts| size }}
+        <h3>关于</h3>
         <figure>
             <img src="/favicon.ico" style="width: 60px;"/>
             <p><strong>{{ site.meta.author.name }}</strong></p>
