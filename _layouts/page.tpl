@@ -61,25 +61,17 @@
     </H1>
 
     <nav class="block">
-        <p style="display: none">{{ site.categories }}</p>
-        {% for category in site.custom.categories %}
-                {% if site.custom.hide contains category.name %}
-                {% else %}
-                <p style="display: none">{{ site.categories[category.name] }},  {{ site.categories[category.name] |
-                    size }}</p>
-                {% endif %}
-        {% endfor %}
+        <i class="icon-large icon-folder-open"></i><span><a href="/">{{ site.posts | size }}</a></span>
         <ul>
-            {% for category in site.categories %}
-                {% assign name = category | first %}
+            {% for category in site.custom.categories %}
+                {% assign name = category.name %}
                 {% if site.custom.hide contains name %}
                 {% else %}
                 <li class="{{ name }}" ><a href="/category/{{ name }}/">
-                    <p style="display: none">{{ site.custom.categories[name] }}</p>
-                    {{ site.custom.categories[name] }} <span>{{ category | last | size }}</span></a></li>
+                    {{ category.title }} <span></span></a></li>
                 {% endif %}
             {% endfor %}
-            <li class="world"><a href="/world/" >真彩世界<span>{{ site.posts| size }}</span></a></li>
+            <li class="world"><a href="/world/" >真彩世界<span></span></a></li>
         </ul>
     </nav>
 
@@ -99,7 +91,7 @@
     </div>
 
     <div class="block block-tags">
-        <h3><a href="/tags.html">Tags </a></h3>
+        <i class="icon-large icon-tags"></i><span><a href="/tags.html">{{ site.tags | size }}</a></span>
         {% unless site.tags == empty %}
         <ul class="tags_list">
             <li><i class="icon-tags"></i></li>
