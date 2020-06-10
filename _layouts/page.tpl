@@ -125,12 +125,32 @@
 <!--<script src="https://elfjs.googlecode.com/files/elf-0.4.1-min.js"></script>-->
 
 <script src="/assets/js/site.js"></script>
-<script src="/assets/js/simple-jekyll-search.min.js"></script>
+
 <script src="/assets/js/feature.js"></script>
 {% for script in page.scripts %}
 <script src="{{ script }}"></script>
 {% endfor %}
-
+<script type="text/javascript">
+    let categoryCount = function(){
+    let count = {
+        {% for category in site.categories %}
+            {% assign name = category | first %}
+            {% assign count = category | last | size %}
+        {{ name }}: {{ count }},
+        {% endfor%}
+    }
+    console.log("===", count, JSON.stringify(count))
+    let li_arr = document.querySelectorAll("nav li").toArray();
+    li_arr.forEach(el => {
+        let cat = el.getAttribute("class")
+        if(cat){
+            el.querySelector("span").textContent = count[cat]
+        }
+    })
+}
+categoryCount();
+</script>
+<script src="/assets/js/simple-jekyll-search.min.js"></script>
 <script type="text/javascript">
     SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
