@@ -1,18 +1,29 @@
 {% include header.tpl %}
 
-{% for post in list %}
+{% for post in list limit:limitation %}
+
 {% if site.custom.hide contains post.category or post.url contains "/world/" %}
 {% else %}
 
-<article>
-	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-	{% include meta.tpl %}
-	<div class="article-content">
-	{% if preview and post.layout == 'post' %}
-		{{ post.content | strip_html | strip_newlines | truncate: 100 }}
+{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+	{% if this_year != last_year %}
+	{% unless forloop.first %}
+		</ul>
+	</section>
+	{% endunless %}
+	<section>
+		<h2>{{ this_year }}</h2>
+		<ul>
 	{% endif %}
-	</div>
-</article>
+		<li><time>{{ post.date | date: "%Y-%m-%d" }}</time><a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% if forloop.last %}
+		</ul>
+	</section>
+	{% endif %}
+{% capture last_year %}{{ this_year }}{% endcapture %}
+
 {% endif %}
 {% endfor %}
 

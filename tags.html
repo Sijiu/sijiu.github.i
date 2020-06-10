@@ -5,7 +5,8 @@ title: Tags
 
 
 <ul class="tag_box inline">
-  {% assign tags_list = site.tags %}  
+  {% assign tags_list = site.tags %}
+  {% include header.tpl %}
   {% include tags_list.tpl %}
 </ul>
 <p style="margin-bottom: 10px;">&nbsp;</p>
@@ -15,23 +16,9 @@ title: Tags
   <h2 id="{{ tag[0] }}-ref" >{{ tag[0] }}</h2>
   <ul>
     {% assign list = tag[1] %}
-    {% for post in list %}
-      <article {% if forloop.index== 1 and preview %} content-loaded="1" {% endif %}>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        {% include meta.tpl %}
-        <div class="article-content">
-          {% if forloop.index == 1 and preview and post.layout == 'post' %}
-          {{ post.content | strip_html | strip_newlines | truncate: 100 }}
-          {% endif %}
-        </div>
-      </article>
-    {% endfor %}
-
-    {% if list == null %}
-    <article class="empty">
-      <p>该分类下还没有文章</p>
-    </article>
-    {% endif %}
+<!--    -->
+    {% include list_public.tpl %}
+<!--    -->
   </ul>
 </div>
 {% endfor %}
