@@ -1,9 +1,9 @@
 <p class="meta">
     <span class="datetime">{{ post.date | date: "%Y-%m-%d" }}</span>
-	 Cat:[<a href="/category/{{ post.category }}"
+	 <i class="icon-folder-open"></i>[<a href="/category/{{ post.category }}"
 				  class="{{ post.category }}">{{ site.custom.category[post.category] }}</a>]
     {% if post.tags.size > 0 %}
-        &nbsp;&nbsp;Tag:
+        &nbsp;&nbsp;<i class="icon-tags"></i>
         {% for tag in post.tags %}
         <a href="/tags#{{ tag }}-ref" class="tag"> {{ tag }} </a>
         {% endfor %}

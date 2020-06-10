@@ -8,6 +8,7 @@
     <title>{{ site.name }}{% if page.title %} / {{ page.title }}{% endif %}</title>
     <link href="http://{{ site.host }}/feed.xml" rel="alternate" title="{{ site.name }}" type="application/atom+xml"/>
     <link rel="stylesheet" type="text/css" href="/assets/css/site.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="/assets/css/code/github.css"/>
     {% for style in page.styles %}
     <link rel="stylesheet" type="text/css" href="{{ style }}"/>
@@ -61,7 +62,7 @@
 
     <nav class="block">
         <ul>
-            {% for category in site.custom.categories %}
+            {% for category in site.categories %}
                 {% if site.custom.hide contains category.name %}
                 {% else %}
                 <li class="{{ category.name }}"><a href="/category/{{ category.name }}/">{{ category.title
@@ -123,6 +124,7 @@
 
 <script src="/assets/js/site.js"></script>
 <script src="/assets/js/simple-jekyll-search.min.js"></script>
+<script src="/assets/js/feature.js"></script>
 {% for script in page.scripts %}
 <script src="{{ script }}"></script>
 {% endfor %}
@@ -137,42 +139,6 @@
         limit: 20, // 返回最大文章数
         fuzzy: false // 是否模糊匹配
     })
-
-
-    let arr =document.getElementsByTagName("a");
-        arr = [].slice.call(arr);
-        arr.forEach(el => {
-            if(el.getAttribute("href") && el.getAttribute("href").startsWith("http")
-                && (!el.getAttribute("href").startsWith("https://sijiu.github.io"))){
-                el.setAttribute("target", "_blank")
-            }
-        })
-
-      let changeTag = function () {
-    let aim_tag = decodeURI(location.hash.replace(/#|-ref/g, ""))
-    let h2arr = document.getElementsByName("tags_div");
-    h2arr = [].slice.call(h2arr);
-    h2arr.forEach(el => {
-      let tag = el.getAttribute("id")
-      if (tag && tag.replace("_div", "") === aim_tag) {
-        el.setAttribute("class", "tag_show")
-      }else{
-        if(aim_tag){
-          el.setAttribute("class", "tag_hide")
-        }else{
-          el.setAttribute("class", "tag_show")
-        }
-      }
-    })
-  }
-
-      let t_arr = document.getElementsByName("tag_a");
-      t_arr = [].slice.call(t_arr);
-      t_arr.forEach(el => {
-        el.onclick = changeTag;
-      })
-
-      changeTag();
 
 </script>
 
