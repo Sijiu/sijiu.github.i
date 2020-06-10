@@ -75,7 +75,4 @@ gitalk:
   owner: Sijiu
   admin: Sijiu
 
-gems: [jekyll-paginate,jekyll-sitemap]
-paginate: 9
-paginate_path: /page:num/
 

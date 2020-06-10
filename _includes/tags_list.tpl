@@ -1,3 +1,5 @@
+{% include header.tpl %}
+
 {% comment %}<!--
 The tags_list include is a listing helper for tags.
 Usage:
