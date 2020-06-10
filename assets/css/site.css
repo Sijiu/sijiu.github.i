@@ -85,7 +85,10 @@ article .program1 {color: #2c3e50 !important;}
 /* tags */
 .tag_hide {display: none}
 .tag_show {display: block}
-
+nav i, .tags_list i {
+    margin-right: 4px;
+    color: #fff;
+}
 .tag_box a span, nav a span, .tags_list a span {
     vertical-align: super;
     font-size: .8em;

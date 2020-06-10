@@ -61,7 +61,8 @@
     </H1>
 
     <nav class="block">
-        <i class="icon-large icon-folder-open"></i><span><a href="/">{{ site.posts | size }}</a></span>
+        <i class="icon-large icon-folder-open"></i>
+        <span><a href="/">{{ site.posts | size }}</a></span>
         <ul>
             {% for category in site.custom.categories %}
                 {% assign name = category.name %}
@@ -91,10 +92,11 @@
     </div>
 
     <div class="block block-tags">
-        <i class="icon-large icon-tags"></i><span><a href="/tags.html">{{ site.tags | size }}</a></span>
         {% unless site.tags == empty %}
         <ul class="tags_list">
-            <li><i class="icon-tags"></i></li>
+            <li> <i class="icon-large icon-tags"></i>
+                <span><a href="/tags.html">{{ site.tags | size }}</a></span>
+            </li>
             {% assign tags_list = site.tags %}
             {% include tags_list.tpl %}
         </ul>
