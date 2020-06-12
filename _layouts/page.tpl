@@ -8,7 +8,7 @@
     <title>{{ site.name }}{% if page.title %} / {{ page.title }}{% endif %}</title>
     <link href="http://{{ site.host }}/feed.xml" rel="alternate" title="{{ site.name }}" type="application/atom+xml"/>
     <link rel="stylesheet" type="text/css" href="/assets/css/site.css"/>
-    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"/>
+<!--    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css"/>-->
     <link rel="stylesheet" type="text/css" href="/assets/css/code/github.css"/>
     {% for style in page.styles %}
     <link rel="stylesheet" type="text/css" href="{{ style }}"/>
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
     <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
-    <script src="https://tajs.qq.com/stats?sId=66563283"></script>
+<!--    <script src="https://tajs.qq.com/stats?sId=66563283"></script>-->
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <script>
         var _hmt = _hmt || [];
@@ -61,7 +61,7 @@
     </H1>
 
     <nav class="block">
-        <i class="icon-large icon-folder-open"></i>
+        <i class="icon-large icon-folder-open">📂</i>
         <span><a href="/">{{ site.posts | size }}</a></span>
         <ul>
             {% for category in site.custom.categories %}
@@ -94,7 +94,7 @@
     <div class="block block-tags">
         {% unless site.tags == empty %}
         <ul class="tags_list">
-            <li> <i class="icon-large icon-tags"></i>
+            <li> <i class="icon-large icon-tags">🏷</i>
                 <span><a href="/tags.html">{{ site.tags | size }}</a></span>
             </li>
             {% assign tags_list = site.tags %}
