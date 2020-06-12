@@ -61,7 +61,7 @@
     </H1>
 
     <nav class="block">
-        <i class="icon-large icon-folder-open">📂</i>
+        <i class="icon-large icon-folder-open"></i>
         <span><a href="/">{{ site.posts | size }}</a></span>
         <ul>
             {% for category in site.custom.categories %}
