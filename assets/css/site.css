@@ -74,13 +74,13 @@ article .gist td{font-size: 100%;}
 article .gist .line_numbers{font-size: 85%;}
 
 /* category */
-article a.diary, section a.diary
+article a.diary, section a.diary,
 .diary a {color: #eaf2d3 !important; background: #eaf2d3;}
-article a.program, section a.program
+article a.program, section a.program,
 .program a {color: #6495ed !important;}
-article a.personal, section a.personal
+article a.personal, section a.personal,
 .personal a {color: #b0c4de !important;}
-article a.another, section a.another
+article a.another, section a.another,
 .another a {color: #b0929f !important;}
 article .default {color: #d24d57 !important;}
 article .program1 {color: #9d2933 !important;}
