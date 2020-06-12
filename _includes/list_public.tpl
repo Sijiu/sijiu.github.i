@@ -17,7 +17,9 @@
 		<h2>{{ this_year }}</h2>
 		<ul>
 	{% endif %}
-		<li><time>{{ post.date | date: "%Y-%m-%d" }}</time><a href="{{ post.url }}">{{ post.title }}</a></li>
+		<li><time>{{ post.date | date: "%Y-%m-%d" }}</time><a href="{{ post.url }}">{{ post.title }}</a>
+		{% include meta.tpl %}
+		</li>
 	{% if forloop.last %}
 		</ul>
 	</section>
