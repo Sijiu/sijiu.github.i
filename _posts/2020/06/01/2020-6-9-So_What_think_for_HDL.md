@@ -1,7 +1,7 @@
 ---
 layout: post
 title: So_What_think_for_HDL
-category: personal
+category: diary
 paginate: true
 ---
 * 目录

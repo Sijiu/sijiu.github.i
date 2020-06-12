@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Our_Childhood
-category: personal
+category: diary
 ---
 * 目录
 {:toc}
