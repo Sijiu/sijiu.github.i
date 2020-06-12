@@ -93,6 +93,9 @@ nav i, .tags_list i {
     margin-right: 4px;
     color: #fff;
 }
+.meta i{
+    color: #2a333c;
+}
 .tag_box a span, nav a span, .tags_list a span {
     vertical-align: super;
     font-size: .8em;
