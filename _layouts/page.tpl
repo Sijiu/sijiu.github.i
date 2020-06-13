@@ -94,7 +94,7 @@
     <div class="block block-tags">
         {% unless site.tags == empty %}
         <ul class="tags_list">
-            <li> <i class="icon-large icon-tags">🏷</i>
+            <li> <i class="icon-large icon-tags"></i>
                 <span><a href="/tags.html">{{ site.tags | size }}</a></span>
             </li>
             {% assign tags_list = site.tags %}
