@@ -75,7 +75,7 @@ article .gist .line_numbers{font-size: 85%;}
 
 /* category */
 article a.diary, section a.diary,
-.diary a {color: #eaf2d3 !important; background: #eaf2d3;}
+.diary a {background: #eaf2d3;}
 article a.program, section a.program,
 .program a {color: #6495ed !important;}
 article a.personal, section a.personal,
