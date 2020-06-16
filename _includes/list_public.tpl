@@ -1,6 +1,6 @@
-{% include header.tpl %}
+{ % include header.tpl % }
 
-{% for post in list limit:limitation %}
+{% for post in list %}
 
 {% if site.custom.hide contains post.category or post.url contains "/world/" %}
 {% else %}

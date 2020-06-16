@@ -6,7 +6,7 @@ title: Tags
 
 <ul class="tag_box inline">
   {% assign tags_list = site.tags %}
-<!--  { % include header.tpl % }-->
+  {% include header.tpl %}
   {% include tags_list.tpl %}
 </ul>
 <p style="margin-bottom: 10px;">&nbsp;</p>
@@ -16,9 +16,7 @@ title: Tags
   <h2 id="{{ tag[0] }}-ref" >{{ tag[0] }}</h2>
   <ul>
     {% assign list = tag[1] %}
-<!--    -->
     {% include list_public.tpl %}
-<!--    -->
   </ul>
 </div>
 {% endfor %}
