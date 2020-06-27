@@ -132,7 +132,7 @@ nav i, .tags_list i {
 
 
 /* list */
-li {list-style-type:none;}
+ul li {list-style-type:none;}
 section h2 {
     margin: 12px 0;
 }
