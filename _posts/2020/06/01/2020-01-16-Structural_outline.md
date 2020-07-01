@@ -4,7 +4,8 @@ title: Structural outline
 category: personal
 paginate: true
 ---
-
+* 目录
+{:toc}
 
 ### 申请联盟  失败
 ### 口腔溃疡还有点疼
