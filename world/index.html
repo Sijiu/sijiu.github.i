@@ -11,11 +11,7 @@ title: 真彩世界
 {% for post in list limit:limitation %}
 {% capture this_year %}
     {{ assign y = post.date | date: "%Y" }}
-    {% case y %}
-          {% when '2020' %}二〇二〇
-          {% when '2019' %}二〇一九
-          {% when '2021' %}二〇二一
-    {% endcase %}
+    {{ y | replace::'0','〇' | replace::'2','二' }}
 {% endcapture %}
 {% capture next_year %}{{ post.previous.date | date: "%Y" }}
 
@@ -30,20 +26,7 @@ title: 真彩世界
 {% endif %}
 <!--	<h3>{ { post.date | date: "%b" } }</h3>-->
 	<h3>{{ assign m = post.date | date: "%-m" }}
-        {% case m %}
-            {% when '1' %}Januar
-              {% when '2' %}Februar
-              {% when '3' %}M&auml;rz
-              {% when '4' %}April
-              {% when '5' %}Mai
-              {% when '6' %}Juni
-              {% when '7' %}Juli
-              {% when '8' %}August
-              {% when '9' %}September
-              {% when '10' %}Oktober
-              {% when '11' %}November
-              {% when '12' %}Dezember
-        {% endcase %}月
+        {{ m | replace::'6','六' | replace::'1','一' }}月
     </h3>
 	{{ post.content }}
 {% if forloop.last %}
