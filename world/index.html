@@ -11,7 +11,7 @@ title: 真彩世界
 {% for post in list limit:limitation %}
 {% capture this_year %}
     {{ assign y = post.date | date: "%Y" }}
-    {{ y | replace: '0','〇' | replace: '2','二' }}
+    {{ y | replace:: '0','〇' | replace:: '2','二' }}
 {% endcapture %}
 {% capture next_year %}{{ post.previous.date | date: "%Y" }}
 
@@ -26,7 +26,7 @@ title: 真彩世界
 {% endif %}
 <!--	<h3>{ { post.date | date: "%b" } }</h3>-->
 	<h3>{{ assign m = post.date | date: "%-m" }}
-        {{ m | replace: '12','十二' | replace: '6','六' | replace: '1','一' | replace: '六', "流"}}月
+        {{ m | replace:: '12','十二' | replace:: '6','六' | replace:: '1','一' | replace:: '六', "流"}}月
     </h3>
 	{{ post.content }}
 {% if forloop.last %}
