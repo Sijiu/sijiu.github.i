@@ -31,18 +31,11 @@ title: 真彩世界
 <!--	<h3>{ { post.date | date: "%b" } }</h3>-->
 	<h3>{{ assign m = post.date | date: "%-m" }}
         {% case m %}
-          {% when '1' %}'一'
-          {% when '2' %}二
-          {% when '3' %}三
-          {% when '4' %}四
-          {% when '5' %}五
-          {% when '6' %}liu'六'
-          {% when '7' %}Qi'七'
-          {% when '8' %}Ba八
-          {% when '9' %}九
-          {% when '10' %}十
-          {% when '11' %}十一
-          {% when '12' %}十二
+
+          {% when '6' %}liu
+          {% when '7' %}Qi
+          {% when '8' %}Ba
+
         {% endcase %}月
     </h3>
 	{{ post.content }}
