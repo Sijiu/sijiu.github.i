@@ -8,7 +8,7 @@ tags: dlsym magic_open
 * 目录
 {:toc}
 
-> 安装运行 ava 时一个错误
+> 安装运行 fava 时一个错误
 ### 一、报错:  
    ```bash
     File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/ctypes/__init__.py", line 366, in __getitem__
@@ -16,10 +16,11 @@ tags: dlsym magic_open
     AttributeError: dlsym(RTLD_DEFAULT, magic_open): symbol not found  
     
    ```  
-### 二、解决  
+### 二、解决    
+ 
     查找资料, 有的介绍是 Macos dlsym 此等环境 xcode 的问题, 需要安装新的 xcode 之类的解决方案, 成本太高  
     
-后发现 该问题应为 Python-magic 库相关, 尝试升级解决:  
+后发现 该问题应为 Python-magic 库相关, 尝试升级解决:    
 
    ```bash
    pip3 install --upgrade python_magic  
