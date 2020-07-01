@@ -134,10 +134,11 @@ nav i, .tags_list i {
 /* list */
 ul li {list-style-type:none;}
 section h2 {
-    margin: 12px 0;
+    margin: 28px 0;
+    font-style: italic;
 }
 section h3 {
-    margin: 5px 0;
+    margin: 18px 0;
 }
 
 #disqus_thread{clear:both; margin:3em 0; font-size:80%;}
