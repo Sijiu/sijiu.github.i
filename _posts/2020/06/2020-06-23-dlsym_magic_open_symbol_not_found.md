@@ -8,14 +8,17 @@ tags: dlsym magic_open
 * 目录
 {:toc}
 
-> 安装运行 fava 时一个错误 dlsym(RTLD_DEFAULT, magic_open): 
+> 安装运行 fava 时一个错误 dlsym(RTLD_DEFAULT, magic_open):   
+
 ### 一、报错:  
    ```bash
     File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/ctypes/__init__.py", line 366, in __getitem__
     func = self._FuncPtr((name_or_ordinal, self))  
     AttributeError: dlsym(RTLD_DEFAULT, magic_open): symbol not found  
     
-   ```    
+   ```  
+  
+
 
 ### 二、解决    
  
