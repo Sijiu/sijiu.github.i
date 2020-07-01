@@ -20,6 +20,7 @@ title: 真彩世界
 </section>
 {% endunless %}
 <section>
+	{{ "202012" | replace:"2","二" | replace:"二","而" }}
 	<h2>{{ this_year }}</h2>
 {% endif %}
 	<h3>{{ post.date | date: "%b" }}_ {{ post.date | date: "%-m" }}</h3>
