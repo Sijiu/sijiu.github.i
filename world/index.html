@@ -20,10 +20,10 @@ title: 真彩世界
 </section>
 {% endunless %}
 <section>
-	{{ "202012" | replace:"2","二" | replace:"二","而" }}
+	{{ "202012" | replace:"12","十二" | replace:"2","二" | replace:"0","〇" }}
 	<h2>{{ this_year }}</h2>
 {% endif %}
-	<h3>{{ post.date | date: "%b" }}_ {{ post.date | date: "%-m" }}</h3>
+	<h3> {{ post.date | date: "%-m"  | replace:"12","十二" | replace:"6","六"}}</h3>
 	{{ post.content }}
 {% if forloop.last %}
 </section>
