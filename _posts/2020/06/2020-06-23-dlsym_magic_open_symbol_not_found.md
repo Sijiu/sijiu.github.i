@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 关于 dlsym(RTLD_DEFAULT, magic_open): symbol not found 的解决
+title: symbol not found 的解决
 category: program
 tags: dlsym magic_open
 ---
@@ -8,7 +8,7 @@ tags: dlsym magic_open
 * 目录
 {:toc}
 
-> 安装运行 fava 时一个错误
+> 安装运行 fava 时一个错误 dlsym(RTLD_DEFAULT, magic_open): 
 ### 一、报错:  
    ```bash
     File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/ctypes/__init__.py", line 366, in __getitem__
