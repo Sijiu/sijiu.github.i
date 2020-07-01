@@ -15,7 +15,8 @@ tags: dlsym magic_open
     func = self._FuncPtr((name_or_ordinal, self))  
     AttributeError: dlsym(RTLD_DEFAULT, magic_open): symbol not found  
     
-   ```  
+   ```    
+
 ### 二、解决    
  
     查找资料, 有的介绍是 Macos dlsym 此等环境 xcode 的问题, 需要安装新的 xcode 之类的解决方案, 成本太高  
