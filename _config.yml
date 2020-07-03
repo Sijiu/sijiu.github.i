@@ -34,6 +34,7 @@ custom:
         program: 编程
         personal: personal
         diary: diary
+        reproduce: 开源转载
 
     hide: personal_diary_world/
 
