@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 如何不靠运气变得富有[转]
-category: default
-tags: 
+title: 如何不靠运气变得富有
+category: reproduce
+tags: 财富 资产
 ---
 * 目录
 {:toc}
